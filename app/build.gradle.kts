@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.example.gasolinaoualcool"
-    compileSdk = 33
+    compileSdk = 34 // Updated to compile against API level 34
 
     defaultConfig {
         applicationId = "com.example.gasolinaoualcool"
         minSdk = 19
-        targetSdk = 33
+        targetSdk = 34 // Update targetSdk to match compileSdk
         versionCode = 1
         versionName = "1.0"
 
@@ -22,6 +22,7 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
